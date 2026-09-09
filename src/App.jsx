@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Navbar from "./components/navbar";
+import Navbar from './components/Navbar';
 import Hero from "./components/Hero";
 import Statesection from "./components/Statesection";
 import TouristPlaces from "./components/TouristPlaces";

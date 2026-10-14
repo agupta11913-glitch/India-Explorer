@@ -1,8 +1,8 @@
 /**
  * India Map Region Mapping Data
  * Maps SVG map region identifiers (ISO 3166-2:IN codes) to:
- * - stateId: corresponding existing ID (1 to 28) from src/data/state.js
- * - label: existing State Name
+ * - stateId: corresponding existing ID (1 to 36) from src/data/state.js
+ * - label: existing State / Union Territory Name
  * - shortLabel: compact name for tight SVG boundaries
  * - x, y: center coordinates for SVG text labels (in 612x696 viewBox)
  */
@@ -204,9 +204,9 @@ export const indiaMapData = {
     x: 415,
     y: 335
   },
-  // Union Territories (gracefully supported on the map)
+  // 8 Union Territories (all mapped to existing state.js IDs 29–36)
   "an": {
-    stateId: null,
+    stateId: 29,
     label: "Andaman and Nicobar Islands",
     shortLabel: "A&N Islands",
     x: 535,
@@ -214,7 +214,7 @@ export const indiaMapData = {
     isUnionTerritory: true
   },
   "ch": {
-    stateId: null,
+    stateId: 30,
     label: "Chandigarh",
     shortLabel: "CH",
     x: 179,
@@ -222,23 +222,23 @@ export const indiaMapData = {
     isUnionTerritory: true
   },
   "dn": {
-    stateId: null,
-    label: "Dadra and Nagar Haveli",
-    shortLabel: "DN",
+    stateId: 31,
+    label: "Dadra and Nagar Haveli and Daman and Diu",
+    shortLabel: "DNH & DD",
     x: 102,
     y: 405,
     isUnionTerritory: true
   },
   "dd": {
-    stateId: null,
-    label: "Daman and Diu",
-    shortLabel: "DD",
+    stateId: 31,
+    label: "Dadra and Nagar Haveli and Daman and Diu",
+    shortLabel: "Daman & Diu",
     x: 54,
     y: 391,
     isUnionTerritory: true
   },
   "dl": {
-    stateId: null,
+    stateId: 32,
     label: "Delhi",
     shortLabel: "Delhi",
     x: 196,
@@ -246,15 +246,23 @@ export const indiaMapData = {
     isUnionTerritory: true
   },
   "jk": {
-    stateId: null,
+    stateId: 33,
     label: "Jammu and Kashmir",
     shortLabel: "J&K",
-    x: 175,
-    y: 85,
+    x: 142,
+    y: 82,
+    isUnionTerritory: true
+  },
+  "la": {
+    stateId: 34,
+    label: "Ladakh",
+    shortLabel: "Ladakh",
+    x: 205,
+    y: 62,
     isUnionTerritory: true
   },
   "ld": {
-    stateId: null,
+    stateId: 35,
     label: "Lakshadweep",
     shortLabel: "Lakshadweep",
     x: 99,
@@ -262,9 +270,9 @@ export const indiaMapData = {
     isUnionTerritory: true
   },
   "py": {
-    stateId: null,
+    stateId: 36,
     label: "Puducherry",
-    shortLabel: "PY",
+    shortLabel: "Puducherry",
     x: 268,
     y: 560,
     isUnionTerritory: true
